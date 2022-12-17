@@ -298,7 +298,7 @@ a:hover {
 }
 
 .select-news {
-  width: 180px;
+  width: 200px;
 }
 
 .news-card {
@@ -383,7 +383,7 @@ a:hover {
 .crypto-card-container {
   min-height: 65vh !important;
 }
- 
+
 .crypto-card {
   min-width: 250px;
 }
