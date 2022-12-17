@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {  Routes, Route, Link } from 'react-router-dom';
 import {Layout, Typography, Space} from 'antd';
 
 import Navbar from './components/Navbar';
@@ -11,7 +11,7 @@ import HomePage from './components/HomePage'
 function App() {
 
   return (
-    <BrowserRouter>
+    
       <div className='app'>
         <div className='navbar'>
           <Navbar />
@@ -28,14 +28,20 @@ function App() {
               </Routes>
              </div>
           </Layout>
-        </div>
-        <div className='footer'>
-          <Typography.Title>
-               CryptoVerse
-          </Typography.Title>
+        
+          <div className='footer' >
+            <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>
+                CryptoVerse <br />
+                All rights reserved
+            </Typography.Title>
+            <Space>
+              <Link to="/">Home</Link>
+              <Link to="/exchanges">Exchanges</Link>
+              <Link to="/news">News</Link>
+            </Space>
+          </div>
         </div>
       </div>
-    </BrowserRouter>
   );
 }
 

@@ -1,7 +1,7 @@
 :root {
   --text-primary: #000;
   --bgPrimary: #fff;
-  --bgSecondary: #F9F9F9;
+  --bgSecondary: #f9f9f9;
   --pink: #0071bd;
   --light-blue: #e6f7ff;
   --border: #d9d9d9;
@@ -30,7 +30,6 @@ a:hover {
 .main {
   flex: 0.8;
   width: 100%;
-
 }
 
 .routes {
@@ -43,7 +42,7 @@ a:hover {
   margin: 10px;
   height: 100vh;
   margin: 0px;
-  background-color: rgb(0, 21, 41); 
+  background-color: rgb(0, 21, 41);
 }
 
 .logo-container {
@@ -61,7 +60,7 @@ a:hover {
 .logo a {
   color: white;
 }
-  
+
 .menu-control-container {
   display: none !important;
   position: absolute !important;
@@ -79,25 +78,25 @@ a:hover {
   align-items: center;
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width: 1300px) {
   .main {
     margin-left: 50px;
   }
 }
 
-@media screen and (max-width:1170px) {
+@media screen and (max-width: 1170px) {
   .main {
     margin-left: 50px;
   }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1000px) {
   .main {
     margin-left: 100px;
   }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   .app {
     flex-direction: column;
     overflow: hidden;
@@ -193,7 +192,6 @@ a:hover {
   font-size: 1rem;
   opacity: 0.9;
   padding: 20px;
-
 }
 
 .coin-stats-name {
@@ -269,7 +267,7 @@ a:hover {
   background-color: var(--bgSecondary);
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1000px) {
   .stats-container {
     flex-direction: column;
   }
