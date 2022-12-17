@@ -8,7 +8,7 @@ import News from '../components/News'
 const {Title} = Typography
 
 const HomePage = () => {
-  const {data, isFetching} = useGetCryptosQuery();
+  const {data, isFetching} = useGetCryptosQuery(10);
   const globalStats = data?.data?.stats
 
   console.log(data);
@@ -17,6 +17,7 @@ const HomePage = () => {
 
   return (
     <>
+   
       <Title level={2} className="heading">Global Crypto Stats</Title>
       <Row>
         <Col span={12}><Statistic title="Toal Cryptocurrencies" value={globalStats.total} /></Col>

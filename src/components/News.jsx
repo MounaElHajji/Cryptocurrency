@@ -1,11 +1,23 @@
 import React from 'react'
+import {Select, Typography, Avatar, Row, Col, Card} from 'antd'
+import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi'
 
-const News = () => {
+const {Text, Title} = Typography;
+const {Option} = Select
+
+const News = ({simplified}) => {
+
+  const {data: cryptoNews} = useGetCryptoNewsQuery({newsCategory: 'Cryptocurrency', count: simplified ? 10 : 100})
+  
+  if(!cryptoNews?.value) return 'Loading...'
+  console.log(cryptoNews); 
+
   return (
-    <div>
+    <Row gutter={[24, 24]}>
       
-    </div>
+    </Row>
   )
 }
 
 export default News
+ 
